@@ -1,0 +1,178 @@
+15:34:18,386 INFO SMSGW  (SMSGW.java,66,loadConfig )Number of process Queue thread: 5
+15:34:18,391 INFO SMSGW  (SMSGW.java,69,loadConfig )Webservice IP: 127.0.0.1
+15:34:18,392 INFO SMSGW  (SMSGW.java,72,loadConfig )Webservice Port: 8250
+15:34:18,392 INFO SMSGW  (SMSGW.java,75,loadConfig )Webservice Thread: 5
+15:34:18,393 INFO SMSGW  (SMSGW.java,81,loadConfig )Webservice User: config/ngpsmsgw/ws_user.conf
+15:34:18,393 INFO SMSGW  (SMSGW.java,84,loadConfig )Number of MO process: 5
+15:34:18,393 INFO SMSGW  (SMSGW.java,87,loadConfig )Filter Mobile Only: false
+15:34:18,393 INFO SMSGW  (SMSGW.java,90,loadConfig )UnSupport Reply Content: System not support your mobile.Thanks you!
+15:34:18,940 INFO SMSGW  (SMSGW.java,95,loadConfig )Oracle Configuration: jdbc:oracle:thin:@localhost:1521/xe
+15:34:18,941 INFO SMSGW  (SMSGW.java,106,loadConfig )Proxy stand: 
+15:34:18,941 INFO SMSGW  (SMSGW.java,108,loadConfig )Shortcode table: smsgw_shortcode
+15:34:18,941 INFO SMSGW  (SMSGW.java,109,loadConfig )Virtual Shortcode table: smsgw_virtual_shortcode
+15:34:18,943 INFO SMSGW  (SMSGW.java,110,loadConfig )User table: smsgw_user
+15:34:18,943 INFO SMSGW  (SMSGW.java,111,loadConfig )Webservice table: smsgw_mo_ws
+15:34:18,944 INFO SMSGW  (SMSGW.java,112,loadConfig )Shortcode listener table: smsgw_mo_listener
+15:34:18,945 INFO SMSGW  (SMSGW.java,115,loadConfig )Enable Logs: true
+15:34:18,967 INFO SMSGW  (SMSGW.java,123,loadConfig )MO Insert: INSERT INTO SMSGW_MO_LOGS (MSISDN,SHORTCODE,CONTENT,DATETIME,FORWARD) VALUES(?,?,?, ?,?)
+15:34:18,967 INFO SMSGW  (SMSGW.java,124,loadConfig )MO Params: [Ljava.lang.String;@1082059
+15:34:18,968 INFO SMSGW  (SMSGW.java,125,loadConfig )MT Insert: INSERT INTO SMSGW_MT_LOGS (MSISDN,SHORTCODE,ALIAS, CONTENT, USERNAME,DATETIME) VALUES (?, ?, ?, ?, ?, ?)
+15:34:18,968 INFO SMSGW  (SMSGW.java,126,loadConfig )MT Params: [Ljava.lang.String;@83ca27
+15:34:18,968 INFO SMSGW  (SMSGW.java,130,loadConfig )MO CDR Dumpert configuration: config/cdrdumper/mo_dumper.conf
+15:34:18,968 INFO SMSGW  (SMSGW.java,132,loadConfig )MT CDR Dumpert configuration: config/cdrdumper/mt_dumper.conf
+15:34:18,969 INFO SMSGW  (SMSGW.java,134,loadConfig )Load CONFIG Success!!
+15:34:21,472 INFO OracleConnection  (OracleConnection.java,85,init )DBConfig: Connecting to 'jdbc:oracle:thin:@localhost:1521/xe'
+15:34:21,622 INFO OracleConnection  (OracleConnection.java,128,connectToOraServer )DBConfig: CONNECTED.
+15:34:21,622 INFO OracleConnection  (OracleConnection.java,90,init )DBConfig: CONNECTED.
+15:34:21,645 INFO CDRDumper  (CDRDumper.java,68,loadConfig )CDR Dumper Name: MO_CDR
+15:34:21,646 INFO CDRDumper  (CDRDumper.java,74,loadConfig )CDRDumper (MO_CDR) CDR Location: cdr/mo
+15:34:21,646 INFO CDRDumper  (CDRDumper.java,86,loadConfig )CDR Spread: @@@
+15:34:21,646 INFO CDRDumper  (CDRDumper.java,89,loadConfig )CDRDumper (MO_CDR) CDR File Name: mps_smsgw_1_MO_#DATETIME_#SEQUENCE.txt
+15:34:21,646 INFO CDRDumper  (CDRDumper.java,97,loadConfig )CDRDumper (MO_CDR) Dump Sequence: 60000
+15:34:21,646 INFO CDRDumper  (CDRDumper.java,105,loadConfig )CDRDumper (MO_CDR) Max Record per file: 10000
+15:34:21,646 INFO CDRDumper  (CDRDumper.java,113,loadConfig )CDRDumper (MO_CDR) Spread by date: false
+15:34:21,653 INFO CDRDumper  (CDRDumper.java,68,loadConfig )CDR Dumper Name: MT_CDR
+15:34:21,653 INFO CDRDumper  (CDRDumper.java,74,loadConfig )CDRDumper (MT_CDR) CDR Location: cdr/mt
+15:34:21,653 INFO CDRDumper  (CDRDumper.java,86,loadConfig )CDR Spread: @@@
+15:34:21,653 INFO CDRDumper  (CDRDumper.java,89,loadConfig )CDRDumper (MT_CDR) CDR File Name: mps_smsgw_1_MT_#DATETIME_#SEQUENCE.txt
+15:34:21,653 INFO CDRDumper  (CDRDumper.java,97,loadConfig )CDRDumper (MT_CDR) Dump Sequence: 60000
+15:34:21,653 INFO CDRDumper  (CDRDumper.java,105,loadConfig )CDRDumper (MT_CDR) Max Record per file: 10000
+15:34:21,653 INFO CDRDumper  (CDRDumper.java,113,loadConfig )CDRDumper (MT_CDR) Spread by date: false
+15:34:21,744 INFO InsertConnection  (InsertConnection.java,46,init )DBInsert: Connecting to 'jdbc:oracle:thin:@localhost:1521/xe'
+15:34:21,746 INFO InsertConnection  (InsertConnection.java,88,connectToOraServer )DBInsert: CONNECTED.
+15:34:21,746 INFO InsertConnection  (InsertConnection.java,51,init )DBInsert: CONNECTED.
+15:34:21,983 INFO OracleConnection  (OracleConnection.java,336,getAllShortCode )DBConfig:  Finish getAllShortCode 'smsgw_shortcode' -> 1 record (213 ms)
+15:34:21,985 ERROR MyLog  (MyLog.java,102,Error )java.io.StringReader.<init>(StringReader.java:50)
+15:34:21,985 ERROR MyLog  (MyLog.java,102,Error )com.nh.database.ShortCode.getConnectionPropeties(ShortCode.java:59)
+15:34:21,985 ERROR MyLog  (MyLog.java,102,Error )com.nh.mt.ProcessSendSMS.reloadSMSC(ProcessSendSMS.java:82)
+15:34:21,985 ERROR MyLog  (MyLog.java,102,Error )com.nh.mt.ProcessSendSMS.start(ProcessSendSMS.java:112)
+15:34:21,985 ERROR MyLog  (MyLog.java,102,Error )com.nh.mt.ProcessSendSMS.getInstance(ProcessSendSMS.java:46)
+15:34:21,985 ERROR MyLog  (MyLog.java,102,Error )com.nh.mt.ProcessMT.<init>(ProcessMT.java:30)
+15:34:21,986 ERROR MyLog  (MyLog.java,102,Error )com.nh.main.SMSGW.start(SMSGW.java:252)
+15:34:21,986 ERROR MyLog  (MyLog.java,102,Error )com.nh.main.SMSGW.main(SMSGW.java:331)
+15:34:21,991 INFO SMSConfirmQueue  (SMSConfirmQueue.java,112,start )START SMSConfirmQueue !!
+15:34:22,002 INFO SMSSender  (SMSSender.java,269,printParameters )/******************SMSC Parameters******************/
+15:34:22,003 INFO SMSSender  (SMSSender.java,270,printParameters )connectionType     t
+15:34:22,003 INFO SMSSender  (SMSSender.java,271,printParameters )asynchronous       false
+15:34:22,003 INFO SMSSender  (SMSSender.java,272,printParameters )ServiceType        null
+15:34:22,003 INFO SMSSender  (SMSSender.java,273,printParameters )SourceTON          1
+15:34:22,003 INFO SMSSender  (SMSSender.java,274,printParameters )SourceNPI          9
+15:34:22,003 INFO SMSSender  (SMSSender.java,275,printParameters )DestTON            1
+15:34:22,003 INFO SMSSender  (SMSSender.java,276,printParameters )DestNPI            1
+15:34:22,003 INFO SMSSender  (SMSSender.java,277,printParameters )ReplaceFlag        0
+15:34:22,003 INFO SMSSender  (SMSSender.java,278,printParameters )SchedDelivery      null
+15:34:22,003 INFO SMSSender  (SMSSender.java,279,printParameters )Validity           null
+15:34:22,004 INFO SMSSender  (SMSSender.java,280,printParameters )SystemType         null
+15:34:22,004 INFO SMSSender  (SMSSender.java,282,printParameters )ESMClassBinary     64
+15:34:22,004 INFO SMSSender  (SMSSender.java,283,printParameters )Protocol           0
+15:34:22,004 INFO SMSSender  (SMSSender.java,284,printParameters )PriorityFlag       0
+15:34:22,004 INFO SMSSender  (SMSSender.java,285,printParameters )RegisteredDelivery 0
+15:34:22,004 INFO SMSSender  (SMSSender.java,287,printParameters )MsgId              0
+15:34:22,004 INFO SMSSender  (SMSSender.java,288,printParameters )BinaryEnconding    -11
+15:34:22,004 INFO SMSSender  (SMSSender.java,289,printParameters )/***********************Parameters******************/
+15:34:22,004 INFO SMSSender  (SMSSender.java,219,init )SMSSender (834) Thread 0: Try to bind to SMSC ....
+15:34:22,257 INFO SMSSender  (SMSSender.java,468,bind )SMSSender (834) Thread 0: Bind response (bindresp: (pdu: 31 80000002 0 1) Smsc Simulator) 
+15:34:22,257 INFO SMSSender  (SMSSender.java,244,init )SMSSender (834) Thread 0: CONNECT TO SMSC OK!!!
+15:34:22,324 INFO InsertConnection  (InsertConnection.java,46,init )DBInsert: Connecting to 'jdbc:oracle:thin:@localhost:1521/xe'
+15:34:22,361 INFO InsertConnection  (InsertConnection.java,88,connectToOraServer )DBInsert: CONNECTED.
+15:34:22,362 INFO InsertConnection  (InsertConnection.java,51,init )DBInsert: CONNECTED.
+15:34:22,708 INFO OracleConnection  (OracleConnection.java,420,getAllUser )DBConfig:  Finish getAllUser 'smsgw_user' -> 1 record (322 ms)
+15:34:22,750 INFO OracleConnection  (OracleConnection.java,420,getAllUser )DBConfig:  Finish getAllUser 'smsgw_user' -> 1 record (41 ms)
+15:34:22,940 INFO OracleConnection  (OracleConnection.java,375,getAllVirtualShortCode )DBConfig:  Finish getAllVirtualShortCode 'smsgw_virtual_shortcode' -> 1 record (152 ms)
+15:34:23,094 INFO WebServer  (WebServer.java,208,init )Create instance soap listener on 8250
+15:34:23,095 INFO WebServer  (WebServer.java,201,createSocket )Binding to Port 8250
+15:34:23,112 INFO WebServer  (WebServer.java,94,start )soap server listen on port: 8250  
+15:38:16,138 ERROR WebProcessRequest  (WebProcessRequest.java,568,sendResponse )THREAD 0: : Error resposed to client: Software caused connection abort: socket write error
+15:39:25,059 INFO SMSGW  (SMSGW.java,66,loadConfig )Number of process Queue thread: 5
+15:39:25,061 INFO SMSGW  (SMSGW.java,69,loadConfig )Webservice IP: 127.0.0.1
+15:39:25,062 INFO SMSGW  (SMSGW.java,72,loadConfig )Webservice Port: 8250
+15:39:25,062 INFO SMSGW  (SMSGW.java,75,loadConfig )Webservice Thread: 5
+15:39:25,062 INFO SMSGW  (SMSGW.java,81,loadConfig )Webservice User: config/ngpsmsgw/ws_user.conf
+15:39:25,063 INFO SMSGW  (SMSGW.java,84,loadConfig )Number of MO process: 5
+15:39:25,063 INFO SMSGW  (SMSGW.java,87,loadConfig )Filter Mobile Only: false
+15:39:25,063 INFO SMSGW  (SMSGW.java,90,loadConfig )UnSupport Reply Content: System not support your mobile.Thanks you!
+15:39:34,351 INFO SMSGW  (SMSGW.java,66,loadConfig )Number of process Queue thread: 5
+15:39:34,353 INFO SMSGW  (SMSGW.java,69,loadConfig )Webservice IP: 127.0.0.1
+15:39:34,353 INFO SMSGW  (SMSGW.java,72,loadConfig )Webservice Port: 8250
+15:39:34,354 INFO SMSGW  (SMSGW.java,75,loadConfig )Webservice Thread: 5
+15:39:34,354 INFO SMSGW  (SMSGW.java,81,loadConfig )Webservice User: config/ngpsmsgw/ws_user.conf
+15:39:34,354 INFO SMSGW  (SMSGW.java,84,loadConfig )Number of MO process: 5
+15:39:34,355 INFO SMSGW  (SMSGW.java,87,loadConfig )Filter Mobile Only: false
+15:39:34,355 INFO SMSGW  (SMSGW.java,90,loadConfig )UnSupport Reply Content: System not support your mobile.Thanks you!
+15:39:34,897 INFO SMSGW  (SMSGW.java,95,loadConfig )Oracle Configuration: jdbc:oracle:thin:@localhost:1521/xe
+15:39:34,897 INFO SMSGW  (SMSGW.java,106,loadConfig )Proxy stand: 
+15:39:34,897 INFO SMSGW  (SMSGW.java,108,loadConfig )Shortcode table: smsgw_shortcode
+15:39:34,898 INFO SMSGW  (SMSGW.java,109,loadConfig )Virtual Shortcode table: smsgw_virtual_shortcode
+15:39:34,898 INFO SMSGW  (SMSGW.java,110,loadConfig )User table: smsgw_user
+15:39:34,898 INFO SMSGW  (SMSGW.java,111,loadConfig )Webservice table: smsgw_mo_ws
+15:39:34,899 INFO SMSGW  (SMSGW.java,112,loadConfig )Shortcode listener table: smsgw_mo_listener
+15:39:34,900 INFO SMSGW  (SMSGW.java,115,loadConfig )Enable Logs: true
+15:39:34,928 INFO SMSGW  (SMSGW.java,123,loadConfig )MO Insert: INSERT INTO SMSGW_MO_LOGS (MSISDN,SHORTCODE,CONTENT,DATETIME,FORWARD) VALUES(?,?,?, ?,?)
+15:39:34,928 INFO SMSGW  (SMSGW.java,124,loadConfig )MO Params: [Ljava.lang.String;@144ee21
+15:39:34,929 INFO SMSGW  (SMSGW.java,125,loadConfig )MT Insert: INSERT INTO SMSGW_MT_LOGS (MSISDN,SHORTCODE,ALIAS, CONTENT, USERNAME,DATETIME) VALUES (?, ?, ?, ?, ?, ?)
+15:39:34,929 INFO SMSGW  (SMSGW.java,126,loadConfig )MT Params: [Ljava.lang.String;@6ddb07
+15:39:34,929 INFO SMSGW  (SMSGW.java,130,loadConfig )MO CDR Dumpert configuration: config/cdrdumper/mo_dumper.conf
+15:39:34,929 INFO SMSGW  (SMSGW.java,132,loadConfig )MT CDR Dumpert configuration: config/cdrdumper/mt_dumper.conf
+15:39:34,929 INFO SMSGW  (SMSGW.java,134,loadConfig )Load CONFIG Success!!
+15:39:37,171 INFO OracleConnection  (OracleConnection.java,85,init )DBConfig: Connecting to 'jdbc:oracle:thin:@localhost:1521/xe'
+15:39:37,417 INFO OracleConnection  (OracleConnection.java,128,connectToOraServer )DBConfig: CONNECTED.
+15:39:37,418 INFO OracleConnection  (OracleConnection.java,90,init )DBConfig: CONNECTED.
+15:39:37,442 INFO CDRDumper  (CDRDumper.java,68,loadConfig )CDR Dumper Name: MO_CDR
+15:39:37,443 INFO CDRDumper  (CDRDumper.java,74,loadConfig )CDRDumper (MO_CDR) CDR Location: cdr/mo
+15:39:37,443 INFO CDRDumper  (CDRDumper.java,86,loadConfig )CDR Spread: @@@
+15:39:37,443 INFO CDRDumper  (CDRDumper.java,89,loadConfig )CDRDumper (MO_CDR) CDR File Name: mps_smsgw_1_MO_#DATETIME_#SEQUENCE.txt
+15:39:37,444 INFO CDRDumper  (CDRDumper.java,97,loadConfig )CDRDumper (MO_CDR) Dump Sequence: 60000
+15:39:37,444 INFO CDRDumper  (CDRDumper.java,105,loadConfig )CDRDumper (MO_CDR) Max Record per file: 10000
+15:39:37,444 INFO CDRDumper  (CDRDumper.java,113,loadConfig )CDRDumper (MO_CDR) Spread by date: false
+15:39:37,448 INFO CDRDumper  (CDRDumper.java,68,loadConfig )CDR Dumper Name: MT_CDR
+15:39:37,449 INFO CDRDumper  (CDRDumper.java,74,loadConfig )CDRDumper (MT_CDR) CDR Location: cdr/mt
+15:39:37,449 INFO CDRDumper  (CDRDumper.java,86,loadConfig )CDR Spread: @@@
+15:39:37,449 INFO CDRDumper  (CDRDumper.java,89,loadConfig )CDRDumper (MT_CDR) CDR File Name: mps_smsgw_1_MT_#DATETIME_#SEQUENCE.txt
+15:39:37,449 INFO CDRDumper  (CDRDumper.java,97,loadConfig )CDRDumper (MT_CDR) Dump Sequence: 60000
+15:39:37,449 INFO CDRDumper  (CDRDumper.java,105,loadConfig )CDRDumper (MT_CDR) Max Record per file: 10000
+15:39:37,449 INFO CDRDumper  (CDRDumper.java,113,loadConfig )CDRDumper (MT_CDR) Spread by date: false
+15:39:37,521 INFO InsertConnection  (InsertConnection.java,46,init )DBInsert: Connecting to 'jdbc:oracle:thin:@localhost:1521/xe'
+15:39:37,522 INFO InsertConnection  (InsertConnection.java,88,connectToOraServer )DBInsert: CONNECTED.
+15:39:37,522 INFO InsertConnection  (InsertConnection.java,51,init )DBInsert: CONNECTED.
+15:39:37,957 INFO OracleConnection  (OracleConnection.java,336,getAllShortCode )DBConfig:  Finish getAllShortCode 'smsgw_shortcode' -> 1 record (420 ms)
+15:39:37,960 ERROR MyLog  (MyLog.java,102,Error )java.io.StringReader.<init>(StringReader.java:50)
+15:39:37,960 ERROR MyLog  (MyLog.java,102,Error )com.nh.database.ShortCode.getConnectionPropeties(ShortCode.java:59)
+15:39:37,961 ERROR MyLog  (MyLog.java,102,Error )com.nh.mt.ProcessSendSMS.reloadSMSC(ProcessSendSMS.java:82)
+15:39:37,961 ERROR MyLog  (MyLog.java,102,Error )com.nh.mt.ProcessSendSMS.start(ProcessSendSMS.java:112)
+15:39:37,961 ERROR MyLog  (MyLog.java,102,Error )com.nh.mt.ProcessSendSMS.getInstance(ProcessSendSMS.java:46)
+15:39:37,961 ERROR MyLog  (MyLog.java,102,Error )com.nh.mt.ProcessMT.<init>(ProcessMT.java:30)
+15:39:37,961 ERROR MyLog  (MyLog.java,102,Error )com.nh.main.SMSGW.start(SMSGW.java:252)
+15:39:37,962 ERROR MyLog  (MyLog.java,102,Error )com.nh.main.SMSGW.main(SMSGW.java:331)
+15:39:37,972 INFO SMSConfirmQueue  (SMSConfirmQueue.java,112,start )START SMSConfirmQueue !!
+15:39:37,993 INFO SMSSender  (SMSSender.java,269,printParameters )/******************SMSC Parameters******************/
+15:39:37,994 INFO SMSSender  (SMSSender.java,270,printParameters )connectionType     t
+15:39:37,994 INFO SMSSender  (SMSSender.java,271,printParameters )asynchronous       false
+15:39:37,994 INFO SMSSender  (SMSSender.java,272,printParameters )ServiceType        null
+15:39:37,994 INFO SMSSender  (SMSSender.java,273,printParameters )SourceTON          1
+15:39:37,995 INFO SMSSender  (SMSSender.java,274,printParameters )SourceNPI          9
+15:39:37,995 INFO SMSSender  (SMSSender.java,275,printParameters )DestTON            1
+15:39:37,995 INFO SMSSender  (SMSSender.java,276,printParameters )DestNPI            1
+15:39:37,995 INFO SMSSender  (SMSSender.java,277,printParameters )ReplaceFlag        0
+15:39:37,995 INFO SMSSender  (SMSSender.java,278,printParameters )SchedDelivery      null
+15:39:37,996 INFO SMSSender  (SMSSender.java,279,printParameters )Validity           null
+15:39:37,996 INFO SMSSender  (SMSSender.java,280,printParameters )SystemType         null
+15:39:37,996 INFO SMSSender  (SMSSender.java,282,printParameters )ESMClassBinary     64
+15:39:37,996 INFO SMSSender  (SMSSender.java,283,printParameters )Protocol           0
+15:39:37,996 INFO SMSSender  (SMSSender.java,284,printParameters )PriorityFlag       0
+15:39:37,997 INFO SMSSender  (SMSSender.java,285,printParameters )RegisteredDelivery 0
+15:39:37,997 INFO SMSSender  (SMSSender.java,287,printParameters )MsgId              0
+15:39:37,997 INFO SMSSender  (SMSSender.java,288,printParameters )BinaryEnconding    -11
+15:39:37,997 INFO SMSSender  (SMSSender.java,289,printParameters )/***********************Parameters******************/
+15:39:37,998 INFO SMSSender  (SMSSender.java,219,init )SMSSender (834) Thread 0: Try to bind to SMSC ....
+15:39:38,119 INFO SMSSender  (SMSSender.java,468,bind )SMSSender (834) Thread 0: Bind response (bindresp: (pdu: 31 80000002 0 1) Smsc Simulator) 
+15:39:38,119 INFO SMSSender  (SMSSender.java,244,init )SMSSender (834) Thread 0: CONNECT TO SMSC OK!!!
+15:39:38,150 INFO InsertConnection  (InsertConnection.java,46,init )DBInsert: Connecting to 'jdbc:oracle:thin:@localhost:1521/xe'
+15:39:38,232 INFO InsertConnection  (InsertConnection.java,88,connectToOraServer )DBInsert: CONNECTED.
+15:39:38,232 INFO InsertConnection  (InsertConnection.java,51,init )DBInsert: CONNECTED.
+15:39:38,310 INFO OracleConnection  (OracleConnection.java,420,getAllUser )DBConfig:  Finish getAllUser 'smsgw_user' -> 1 record (53 ms)
+15:39:38,314 INFO OracleConnection  (OracleConnection.java,420,getAllUser )DBConfig:  Finish getAllUser 'smsgw_user' -> 1 record (4 ms)
+15:39:38,350 INFO OracleConnection  (OracleConnection.java,375,getAllVirtualShortCode )DBConfig:  Finish getAllVirtualShortCode 'smsgw_virtual_shortcode' -> 1 record (20 ms)
+15:39:38,498 INFO WebServer  (WebServer.java,208,init )Create instance soap listener on 8250
+15:39:38,498 INFO WebServer  (WebServer.java,201,createSocket )Binding to Port 8250
+15:39:38,499 INFO WebServer  (WebServer.java,94,start )soap server listen on port: 8250  
+15:40:38,347 INFO CDRDumper  (CDRDumper.java,218,dump )CDRDumper (MT_CDR) Dumped CDR to: 'cdr/mt/mps_smsgw_1_MT_20161029154037_000001.txt'
